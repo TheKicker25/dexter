@@ -1,0 +1,42 @@
+version: "1.0.0"
+name: "Dexter Architecture"
+
+nodeComponents:
+  agent:
+    name: "Agent"
+    description: "Main Dexter agent"
+    color: "#4A90E2"
+  model:
+    name: "Model"
+    description: "Language model interface"
+    color: "#7B68EE"
+  cli:
+    name: "CLI"
+    description: "Command line interface"
+    color: "#50C878"
+  tools:
+    name: "Tools"
+    description: "Finance and search tools"
+    color: "#FF6B6B"
+  utils:
+    name: "Utils"
+    description: "Utility functions"
+    color: "#FFA500"
+  evals:
+    name: "Evals"
+    description: "Evaluation framework"
+    color: "#9B59B6"
+
+edgeComponents:
+  uses:
+    name: "uses"
+    description: "Component uses another component"
+    color: "#34495E"
+  configures:
+    name: "configures"
+    description: "Component configures another component"
+    color: "#E74C3C"
+  evaluates:
+    name: "evaluates"
+    description: "Component evaluates another component"
+    color: "#27AE60"

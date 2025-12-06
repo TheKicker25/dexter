@@ -1,0 +1,152 @@
+{
+  "vv": {
+    "name": "Dexter Architecture",
+    "version": "1.0.0",
+    "edgeTypes": {
+      "uses": {
+        "color": "#34495E"
+      },
+      "evaluates": {
+        "color": "#27AE60"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "cli",
+      "type": "group",
+      "x": 278,
+      "y": -107,
+      "width": 120,
+      "height": 60,
+      "vv": {
+        "nodeType": "cli",
+        "shape": "rectangle",
+        "color": "#50C878"
+      },
+      "label": "CLI"
+    },
+    {
+      "id": "agent",
+      "type": "group",
+      "x": 359,
+      "y": 19,
+      "width": 120,
+      "height": 60,
+      "vv": {
+        "nodeType": "agent",
+        "shape": "rectangle",
+        "color": "#4A90E2"
+      },
+      "label": "Agent"
+    },
+    {
+      "id": "model",
+      "type": "group",
+      "x": 272,
+      "y": 146,
+      "width": 120,
+      "height": 60,
+      "vv": {
+        "nodeType": "model",
+        "shape": "rectangle",
+        "color": "#7B68EE"
+      },
+      "label": "Model"
+    },
+    {
+      "id": "tools",
+      "type": "group",
+      "x": 457,
+      "y": 146,
+      "width": 120,
+      "height": 60,
+      "vv": {
+        "nodeType": "tools",
+        "shape": "rectangle",
+        "color": "#FF6B6B"
+      },
+      "label": "Tools"
+    },
+    {
+      "id": "utils",
+      "type": "group",
+      "x": 194,
+      "y": 19,
+      "width": 120,
+      "height": 60,
+      "vv": {
+        "nodeType": "utils",
+        "shape": "rectangle",
+        "color": "#FFA500"
+      },
+      "label": "Utils"
+    },
+    {
+      "id": "evals",
+      "type": "group",
+      "x": 456,
+      "y": -106,
+      "width": 120,
+      "height": 60,
+      "vv": {
+        "nodeType": "evals",
+        "shape": "rectangle",
+        "color": "#9B59B6"
+      },
+      "label": "Evals"
+    }
+  ],
+  "edges": [
+    {
+      "id": "cli-agent",
+      "type": "link",
+      "fromNode": "cli",
+      "toNode": "agent",
+      "vv": {
+        "edgeType": "uses",
+        "color": "#34495E"
+      }
+    },
+    {
+      "id": "agent-model",
+      "type": "link",
+      "fromNode": "agent",
+      "toNode": "model",
+      "vv": {
+        "edgeType": "uses",
+        "color": "#34495E"
+      }
+    },
+    {
+      "id": "agent-tools",
+      "type": "link",
+      "fromNode": "agent",
+      "toNode": "tools",
+      "vv": {
+        "edgeType": "uses",
+        "color": "#34495E"
+      }
+    },
+    {
+      "id": "cli-utils",
+      "type": "link",
+      "fromNode": "cli",
+      "toNode": "utils",
+      "vv": {
+        "edgeType": "uses",
+        "color": "#34495E"
+      }
+    },
+    {
+      "id": "evals-agent",
+      "type": "link",
+      "fromNode": "evals",
+      "toNode": "agent",
+      "vv": {
+        "edgeType": "evaluates",
+        "color": "#27AE60"
+      }
+    }
+  ]
+}
